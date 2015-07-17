@@ -16,3 +16,8 @@ That way, more Heap memory would be free for the application. That's what the [f
 The current version is mounted on a single sided PCB and is powered through a micro USB connector by an external 5VDC power source as a mobile phone charger or a computer. There's nothing much on the board apart from the 3V3 voltage regulator and the usual ESP8266 peripheral resistors/capacitors.
 
 ##Pictures
+<p align="center">
+<img width="40%" src="https://raw.githubusercontent.com/DonJuanito99/ESP8266/master/MeteoESP/images/MeteoESP_ForecastDisplay.png" />
+<img width="40%" src="https://raw.githubusercontent.com/DonJuanito99/ESP8266/master/MeteoESP/hardware/MeteoESP_01_BRD_All.png" />
+<img width="100%" src="https://raw.githubusercontent.com/DonJuanito99/ESP8266/master/MeteoESP/hardware/MeteoESP_01_SCH.png" />
+</p>
