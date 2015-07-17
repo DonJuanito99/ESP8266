@@ -1,0 +1,49 @@
+HTTP/1.1 200 OK
+Content-Type: text/html
+<!DOCTYPE HTML>
+
+<html>
+<head><meta content="text/html; charset=utf-8">
+	<title>Meteo Station</title>
+</head>
+
+<body>
+	<form action="/" method="POST">
+	<br/>Last connection status:
+	<br/>Dernier &#233tat de connection:
+	<br/>Ultimo estado de conexion:
+	$lastStatus$
+	<br/><br/>
+	<table>
+	<tr><th>SSIDs:</th></tr>
+	<tr><td><input type="button" onClick='document.getElementById("ssid").value = "$apa$"' value="$apa$"/></td></tr>
+	<tr><td><input type="button" onClick='document.getElementById("ssid").value = "$apb$"' value="$apb$"/></td></tr>
+	<tr><td><input type="button" onClick='document.getElementById("ssid").value = "$apc$"' value="$apc$"/></td></tr>
+	<tr><td><input type="button" onClick='document.getElementById("ssid").value = "$apd$"' value="$apd$"/></td></tr>
+	<tr><td><input type="button" onClick='document.getElementById("ssid").value = "$ape$"' value="$ape$"/></td></tr>
+	<tr><td><input type="button" onClick='document.getElementById("ssid").value = "$apf$"' value="$apf$"/></td></tr>
+	<tr><td><input type="button" onClick='document.getElementById("ssid").value = "$apg$"' value="$apg$"/></td></tr>
+	<tr><td><input type="button" onClick='document.getElementById("ssid").value = "$aph$"' value="$aph$"/></td></tr>
+	<tr><td><input type="button" onClick='document.getElementById("ssid").value = "$api$"' value="$api$"/></td></tr>
+	<br/></table>
+	
+	SSID: <input type="text" id="ssid" name="ssid" value="$newssid$"><br/>
+	
+	<br/>Password/Mot de passe/Contrase&#241a:
+	<br/><input type="text" name="passwd" value=""><br/>
+	
+	<br/>City/Ville/Ciudad ("London" / "Liege" / "Leon"):
+	<br/><input type="text" name="CITY" value="Liege"><br/>
+	<br/>Country/Pays/Pais ("uk" / "be" / "es"):
+	<br/><input type="text" name="COUNTRY" value="be"><br/>
+	<br/>UTC diff./D&#233callage UTC/Diferencia UTC ("0" / "1" / "-2"):
+	<br/><input type="text" name="UTC_OFFSET" value="2"><br/>
+	<br/>API key/Clef API/Clave API
+	<br/>("07beddf4647cadccbe40f854fc279737"):
+	<br/><input type="text" name="APPID" value="07beddf4647cadccbe40f854fc279737"><br/>
+	<br/><input type="submit" value="Accept/Accepter/Acceptar"/>
+	<input type="button" onClick="window.location.reload()" value="Refresh/Rafra&#238chir/Refrescar"/><br/>
+	<br/><input type="submit" name="reboot" value="Restart/Red&#233marrer/Reiniciar!"/>
+	</form>
+</body>
+</html>
