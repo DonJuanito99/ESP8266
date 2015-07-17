@@ -15,6 +15,8 @@ That way, more Heap memory would be free for the application. That's what the [f
 ##Hardware
 The current version is mounted on a single sided PCB and is powered through a micro USB connector by an external 5VDC power source as a mobile phone charger or a computer. There's nothing much on the board apart from the 3V3 voltage regulator and the usual ESP8266 peripheral resistors/capacitors.
 
+**Take care that the PCB file is intended for my CNC, so if you want to use it, you have to change or remove all the contents of the "milling" layer (cyan colored in the layout picture) as I use this layer to mill the ouline of the PCB and the writings**.
+
 ##Pictures
 <p align="center">
 <img width="40%" src="https://raw.githubusercontent.com/DonJuanito99/ESP8266/master/MeteoESP/images/MeteoESP_ForecastDisplay.png" />
