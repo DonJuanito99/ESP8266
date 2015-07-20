@@ -21,7 +21,7 @@ The code still needs some polishing and a more robust error checking but seems q
 ##Hardware
 The current version is mounted on a single sided PCB and is powered through a micro USB connector by an external 5VDC power source as a mobile phone charger or a computer. There's nothing much on the board apart from the 3V3 voltage regulator and the usual ESP8266 peripheral resistors/capacitors. The OLED used is a 0.96" I2C model.
 
-**Take care that the PCB file is intended for my CNC, so if you want to use it, you have to change or remove all the contents of the "milling" layer (cyan colored in the layout picture) as I use this layer to mill the ouline of the PCB and the writings.**
+**Take care that the PCB file is intended for my CNC, so if you want to use it, you have to change or remove all the contents of the "milling" layer (cyan colored in the layout picture) as I use this layer to mill the ouline of the PCB and the writings. The micro USB connector also was modified with two large holes for the soldering of the shell instead of the small openings in the milling layer.**
 
 **There are several small problems with the current PCB version. First, the ESP-01 slightly overlaps with the pushbutton. The holes of the header connectors for the OLED display and the ESP-01 are too small. I'll update the PCB in a few weeks as soon as I'm back from holidays.**
 
