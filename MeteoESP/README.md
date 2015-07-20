@@ -23,7 +23,7 @@ The current version is mounted on a single sided PCB and is powered through a mi
 
 **Take care that the PCB file is intended for my CNC, so if you want to use it, you have to change or remove all the contents of the "milling" layer (cyan colored in the layout picture) as I use this layer to mill the ouline of the PCB and the writings.**
 
-**There are several small problems with the current PCB version. First, the ESP-01 slightly overlaps with the pushbutton. The holes of th header connectors for the OLED display and the ESP-01 are too small. I'll update the PCB in a few weeks as soon as I'm back from holidays.**
+**There are several small problems with the current PCB version. First, the ESP-01 slightly overlaps with the pushbutton. The holes of the header connectors for the OLED display and the ESP-01 are too small. I'll update the PCB in a few weeks as soon as I'm back from holidays.**
 
 ##Pictures
 <p align="center">
