@@ -58,7 +58,7 @@ The software for this application consists of 5 LUA scripts (4 of wich have to b
 ##Pictures
 <p align="center">
 <img width="40%" src="https://raw.githubusercontent.com/DonJuanito99/ESP8266/master/MeteoESP/images/MeteoESP_ForecastDisplay.png" />
-<img width="40%" src="https://raw.githubusercontent.com/DonJuanito99/ESP8266/master/MeteoESP/hardware/MeteoESP_Scrolling.gif" />
+<img width="40%" src="https://raw.githubusercontent.com/DonJuanito99/ESP8266/master/MeteoESP/images/MeteoESP_Scrolling.gif" />
 <img width="40%" src="https://raw.githubusercontent.com/DonJuanito99/ESP8266/master/MeteoESP/hardware/MeteoESP_01_BRD_All.png" />
 <img width="100%" src="https://raw.githubusercontent.com/DonJuanito99/ESP8266/master/MeteoESP/hardware/MeteoESP_01_SCH.png" />
 </p>
