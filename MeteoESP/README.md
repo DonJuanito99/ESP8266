@@ -27,7 +27,7 @@ The software for this application consists of 5 LUA scripts (4 of wich have to b
   - ap.lua : Has to be compiled. This scripts activates the AP mode that allows the user to setup the MeteoESP configuration by connecting to it and opening a browser to the address 192.168.4.1.
   - apInit.lua : Has to be compiled. It is launched by "ap.lc".
   - init.lua : Do not compile it ;) This script is automatically launched by the NodeMCU firmware at powerup/startup.
-  - startup.lua : Has to be compiled. This script is launched by "init.lu". It checks the current STATION mode connection status. If the connection cannot be established, it launched "ap.lc" (AP mode). If the connection is established, it launches "weatherStation.lc".
+  - startup.lua : Has to be compiled. This script is launched by "init.lua". It checks the current STATION mode connection status. If the connection cannot be established, it launches "ap.lc" (AP mode). If the connection is established, it launches "weatherStation.lc".
   - weatherStation.lua : Has to be compiled. This is the main application that retreives forecasts and displays them on the OLED display.
 
 - Pictures :
