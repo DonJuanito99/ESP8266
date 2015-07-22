@@ -104,7 +104,7 @@ end
 
 function startServer()
   print("Serveur injoignable => AP mode")
-  drawStatus("* Mode AP *", "SSID: Meteo-"..string.sub(wifi.ap.getmac(),13),"http://192.168.4.1/")
+  drawStatus("* AP Mode * - V"..vers, "SSID: Meteo-"..string.sub(wifi.ap.getmac(),13),"http://192.168.4.1/")
   lastStatus = sts[wifi.sta.status()]
   cleanup()
   dofile("ap.lc")
@@ -161,7 +161,7 @@ prepare()
 file.open("splash.MONO", "r")
 xbm_splash = file.read()
 file.close()
-drawStatus("- Scan -", "Wait... Patientez...","Espere...")
+drawStatus(" - Scan - V"..vers, "Wait... Patientez...","Espere...")
 
 -- Splash screen
 tmr.delay(2000)

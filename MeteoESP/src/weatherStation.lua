@@ -129,6 +129,7 @@ function updateWeather()
 	print("B:"..node.heap())
 	tmr.stop(1) -- Stop display updates
 	tmr.delay(300) -- allow time for display to terminate
+	tmr.alarm(2, 10000, 0, ConnError) -- 10s watchdog for connection
 	pv = ""
 	plFound = false
 	it = 1
@@ -143,6 +144,7 @@ function updateWeather()
         conn:close()
         conn = nil
 		print("Disconnected")
+		tmr.stop(2) -- Stop Watchdog Function
 		c = nil
 		pv = nil
 		collectgarbage()
@@ -197,6 +199,14 @@ function updateWeather()
       .."User-Agent: Mozilla/4.0 (compatible; esp8266 Lua; Windows NT 5.1)\r\n"
       .."\r\n")
     conn = nil
+end
+
+function ConnError()
+	print("No response. Resetting!")
+	tmr.stop(0)
+	tmr.stop(1)
+	node.restart()
+	while (1) do end -- Force reset wait or hard reset by watchdog
 end
 
 function FontPos(fp)
@@ -342,7 +352,7 @@ function CheckIP()
    ip = wifi.sta.getip()
    if ip=="0.0.0.0" or ip==nil then
       print("No IP!...") 
-	  tmr.alarm(0, 10000, 0, CheckIP) -- 10s
+	  ConnError() -- Reboot to get back an IP
    else
       print("Loading weather...")
       updateWeather()

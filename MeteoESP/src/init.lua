@@ -1,3 +1,4 @@
+vers="1.0"
 ipow = ""
 CITY="Brussels,be"
 APPID="YOUR_APPID_HERE"
