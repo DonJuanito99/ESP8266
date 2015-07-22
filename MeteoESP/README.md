@@ -53,7 +53,7 @@ The software for this application consists of 5 LUA scripts (4 of wich have to b
  
 *Known software problems/bugs:*
 - Sometimes, at boot time, the "drawStatus" function is launched before the data to be displayed is ready. It should be easy to fix, but I don't have time right now to correct this.
-- If the connection to the WiFi acces point is lost between weather forecasts retrievals, the MeteoESP will just reboot to connect back to the AP. This is not elegant, but it should work flawlessly.
+- If the connection to the WiFi access point is lost between weather forecasts retrievals, the MeteoESP will just reboot to connect back to the AP. This is not elegant, but it should work flawlessly.
 
 ##Pictures
 <p align="center">
