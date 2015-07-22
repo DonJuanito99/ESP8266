@@ -117,6 +117,8 @@ function cleanup()
   sts = nil
   cC = nil
   xbm_splash = nil
+  vers = nil
+  srvURL = nil
   -- nil out any functions we defined
   init_i2c_display = nil
   prepare = nil
